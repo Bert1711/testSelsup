@@ -53,7 +53,7 @@ public class CrptApi {
             }
 
             HttpClient httpClient = HttpClients.createDefault();
-            HttpPost httpPost = new HttpPost(BASE_URL + "?pg=milk");
+            HttpPost httpPost = new HttpPost(BASE_URL);            //////  + "?pg=" + product.name 
             httpPost.setHeader("content-type", "application/json");
             httpPost.setHeader("Authorization", "Bearer " + token);
 
